@@ -1,0 +1,53 @@
+Escreva o menu de opc¸oes abaixo. Leia a opção do usuário e execute a operação escolhida. Escreva uma mensagem de erro se a opc¸ao for inválida.
+Escolha a opção:
+1- Soma de 2 números.
+2- Diferença entre 2 números (maior pelo menor).
+3- Produto entre 2 números.
+4- Divis~ao entre 2 números (o denominador não pode ser zero).
+Opção
+
+
+
+int main(){
+  
+    int operacao;
+    printf ("[1] Soma dois numeros\n");
+    printf ("[2] Diferenca entre dois numeros (maior pelo menor)\n");
+    printf ("[3] Produto entre dois numeros\n");
+    printf ("[4] Divisao entre dois numeros (o denominador nao pode ser zero)\n");
+    printf ("Digite uma Opcao:\n");
+    scanf ("%d", &operacao);
+
+    int x, y;
+    printf("Entre com dois numeros:\n");
+    scanf ("%d %d", &x, &y);
+
+    switch(operacao)
+    {
+    case 1:
+        printf ("Soma de dois numeros: %d\n", x+y);
+        break;
+    case 2:
+        printf ("Diferenca entre dois numeros: %d\n", x + y);
+        printf ("Diferenca entre dois numeros: %d\n", x - y);
+        break;
+    case 3:
+        printf ("Produdo entre dois numeros: %d\n", x*y);
+        break;
+    case 4:
+    
+        (y != 0) ? printf("Divisao %.2f\n", (float)x/y) :  printf("O denominador nao pode ser 0\n");
+        break;
+          
+    
+    default:
+        printf ("Operacao invalida\n");
+        break;
+    }
+
+
+
+
+
+    return 0;
+}
