@@ -1,0 +1,42 @@
+Faça um programa que mostre ao usuario um menu com 4 opções de operações matemáticas (as básicas, por exemplo). O usuário escolhe uma das opções e o seu pro
+grama entao pede dois valores numéricos e realiza a operaçõo, mostrando o resultado e saindo.
+
+
+#include <stdio.h>
+
+int main(){
+
+    int operacao;
+    int x, y;
+    printf ("Vamos brincar com a nossa querida matematica ?\n");
+    printf ("[1] SOMA [2] SUBTRACAO [3] MULTIPLICACAO [4] DIVISAO\n");
+    printf ("Entre com a opcao desejada\n");
+    scanf ("%d", &operacao);
+
+    printf ("Entre com dois valores inteiros\n");
+    scanf ("%d %d", &x, &y);
+
+    if (operacao == 1)
+    {
+        operacao = x + y;
+        printf ("Operacao de soma: %d\n", operacao);
+    }else if (operacao == 2){
+        operacao = x - y;
+        printf ("Operacao de subtacao: %d\n", operacao);
+    }else if (operacao == 3){
+        operacao = x*y;
+        printf ("Operacao de multiplicacao: %d\n", operacao);
+    }else if (operacao == 4){
+        printf ("Operacao de divisao: %d\n", operacao);
+    }else{
+        printf ("Operacao invalida\n");
+    }
+
+    
+    
+
+
+
+
+    return 0;
+}
