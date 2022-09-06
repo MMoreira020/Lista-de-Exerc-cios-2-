@@ -1,0 +1,25 @@
+Leia um numero fornecido pelo usuário. Se esse número for positivo, calcule a raiz
+quadrada do numero. Se o número for negativo, mostre uma mensagem dizendo que o
+numero é inválido.
+
+
+#include <stdio.h>
+int main(){
+
+    int num, raiz;
+    printf ("Digite um numero:\n");
+    scanf ("%d", &num);
+
+    if (num > 0)
+    {
+        raiz = sqrt (num);
+        printf ("A raiz quadrada eh: %d\n", raiz);
+    }else{
+        printf ("Numero invalido\n");
+    }
+    
+
+
+
+    return 0;
+}
