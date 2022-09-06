@@ -1,0 +1,24 @@
+Leia um numero real. Se o numero for positivo imprima a raiz quadrada. Do contrário, 
+imprima o numero ao quadrado.
+
+
+#include <stdio.h>
+
+int main(){
+
+    float num, raiz;
+    printf ("DIgite um numero real:\n");
+    scanf ("%f", &num);
+
+    if (num > 0)
+    {
+        raiz = sqrt (num);
+        printf ("A raiz quadrada do numero eh: %.1f\n", raiz);
+    }else{
+        printf ("O numero ao quadrado eh: %.1f\n", num*num);
+    }
+    
+
+
+    return 0;
+}
