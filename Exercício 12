@@ -1,0 +1,25 @@
+Ler um numero inteiro. Se o número lido for negativo, escreva a mensagem “Número ´
+invalido”. Se o número for positivo, calcular o logaritmo deste numero.
+
+
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+
+    int num, soma;
+    printf ("Digite um numero:\n");
+    scanf ("%d", &num);
+
+    if (num < 0)
+    {
+        printf ("Numero invalido\n");
+    }else{
+        soma = log (num);
+        printf ("O logaritmo desse numero eh: %d\n", soma);
+    }
+    
+
+
+    return 0;
+}
