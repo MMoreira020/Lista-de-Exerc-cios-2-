@@ -1,0 +1,43 @@
+A nota final de um estudante e calculada a partir de três notas atribuídas entre o intervalo
+de 0 ate 10, respectivamente, a um trabalho de laboratório, a uma avaliação¸ ao semestral
+e a um exame final. A media das três notas mencionadas anteriormente obedece aos
+pesos: Trabalho de Laboratorio: 2; Avaliação Semestral: 3; Exame Final: 5. De acordo
+com o resultado, mostre na tela se o aluno esta reprovado (média entre 0 e 2,9), de
+recuperação (entre 3 e 4,9) ou se foi aprovado. Fac¸a todas as verificação necesárias. 
+
+
+#include <stdio.h>
+
+int main(){
+
+    float lab, avaliacao, examefinal, media, conceito;
+    printf ("Entre com a nota do trabalho em Laboratorio:\n");
+    scanf ("%f", &lab);
+    printf ("Entre com a nota da avaliacao simestral:\n");
+    scanf ("%f", &avaliacao);
+    printf ("Entre com a nota do exame final:\n");
+    scanf ("%f", &examefinal);
+
+    lab = lab*2;
+    avaliacao = avaliacao*3;
+    examefinal = examefinal*5;
+
+    media = (lab + avaliacao + examefinal)/10;
+
+    if (media > 0 && media < 2.9){
+        printf ("Aluno reprovado: %.2f\n", media);
+    }else if (media > 3 && media < 4.9)
+    {
+        printf ("Aluno de recuperacao: %.2f", media);
+    }else{
+        printf ("Voce foi aprovado: %.2f", media);
+    }
+    
+   
+    
+        
+
+
+
+    return 0;
+}
