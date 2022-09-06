@@ -1,0 +1,27 @@
+Façaa um programa que leia um número e, caso ele seja positivo, calcule e mostre:
+• O numero digitado ao quadrado
+• A raiz quadrada do numero digitado
+
+
+#include <stdio.h>
+
+int main(){
+
+    int num,raiz;
+    printf ("Digite um numero:\n");
+    scanf ("%d", &num);
+
+    if (num > 0)
+    {
+        printf ("O numero digitado, ao quadrado eh: %d\n", num*num);
+        raiz = sqrt (num);
+        printf ("A Raiz quadrada do numero digitado eh: %d\n", raiz);
+    }else{
+        printf ("Numero invalido!");
+    }
+    
+
+
+
+    return 0;
+}
