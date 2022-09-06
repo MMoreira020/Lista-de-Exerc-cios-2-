@@ -1,0 +1,29 @@
+Faça um algoritmo que calcule a media ponderada das notas de 3 provas. A primeira e
+a segunda prova tem peso 1 e a terceira tem peso 2. Ao final, mostrar a média do aluno
+e indicar se o aluno foi aprovado ou reprovado. A nota para aprovac¸ao deve ser igual ou
+superior a 60 pontos.
+
+
+#include <stdio.h>
+
+int main(){
+
+    float n1, n2, n3, soma;
+    printf ("Digite as notas do aluno:\n");
+    scanf ("%f %f %f", &n1, &n2, &n3);
+
+    soma = ((n1*1+n2*1+n3*2)/3);
+
+    if (soma >= 60)
+    {
+        
+         printf ("Aluno Aprovado: %.2f\n", soma);
+
+    }else{
+        printf ("Aluno reprovado: %.2f\n", soma);
+    }
+    
+
+
+    return 0;
+}
